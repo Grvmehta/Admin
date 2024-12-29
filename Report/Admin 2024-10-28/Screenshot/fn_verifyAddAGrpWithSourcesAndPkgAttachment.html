@@ -1,0 +1,1691 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><!--?
+#201105181148:vikas:#738 added favicon meta tag ?-->
+<link rel="shortcut icon" href="https://13077.hotelogix.net/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Manage Source(s) (Test)</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #E7E7E7;
+}
+-->
+#loadImg{position:absolute;z-index:999;}
+#loadImg div{display:table-cell;width:950px;height:450px;background:#fff;text-align:center;vertical-align:middle;}
+</style><link href="https://13077.hotelogix.net/styles/common.css?v=2n520240929" rel="stylesheet" type="text/css">
+<link href="https://13077.hotelogix.net/styles/listmenu_h-new.css?v=2n520240929" rel="stylesheet" type="text/css">
+<link href="https://13077.hotelogix.net/styles/menu2.css?v=2n520240929" rel="stylesheet" type="text/css">
+<link href="https://13077.hotelogix.net/styles/colorshades.css?v=2n520240929" rel="stylesheet" type="text/css">
+<link href="https://13077.hotelogix.net/styles/color-picker.css?v=2n520240929" rel="stylesheet" type="text/css">
+<link href="https://13077.hotelogix.net/styles/celendar.css?v=2n520240929" rel="stylesheet" type="text/css">
+<link href="https://13077.hotelogix.net/js/container/container.css?v=2n520240929" rel="stylesheet" type="text/css">
+<link href="https://13077.hotelogix.net/js/calendar/calendar.css.php?image_url=https://13077.hotelogix.net/images&amp;v=2n520240929" rel="stylesheet" type="text/css">
+<link href="https://13077.hotelogix.net/js/fonts/fonts-min.css?v=2n520240929" rel="stylesheet" type="text/css">
+<link href="https://13077.hotelogix.net/styles/assets-hl/css/allotment.css?v=2n520240929" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://13077.hotelogix.net/js/lang/lang.en.js?v=2n520240929"></script>
+<script type="text/javascript" src="https://13077.hotelogix.net/styles/assets-hl/js/webtoolkit.base64.js"></script>
+<!-- Skin CSS file -->  
+<link rel="stylesheet" type="text/css" href="https://13077.hotelogix.net/js/yui/build/assets/skins/sam/skin.css">
+<link rel="stylesheet" type="text/css" href="https://13077.hotelogix.net/bootstrap/font-awesome/css/font-awesome.min.css">
+<script type="text/javascript" src="https://13077.hotelogix.net/jq/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="https://13077.hotelogix.net/js/common.js?v=2n520240929"></script>
+<script type="text/JavaScript">
+<!--
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+ 
+var waitLoader = new Image();
+waitLoader.src = "https://13077.hotelogix.net/images/wait.gif";
+
+//-->
+
+var JS_HOTEL_DECIMALPLACE = parseInt(2);   
+var deniedResources=null;
+</script>
+</head>
+<body class="yui-skin-sam" onpageshow="event.persisted &amp;&amp; (function(){var allInstances = CKEDITOR.instances, editor, doc;for ( var i in allInstances ){	editor = allInstances[ i ];	doc = editor.document;	if ( doc )	{		doc.$.designMode = &quot;off&quot;;		doc.$.designMode = &quot;on&quot;;	}}})();"><iframe id="_yuiResizeMonitor" style="position: absolute; visibility: visible; width: 10em; height: 10em; top: -134px; left: -134px; border-width: 0px;"></iframe><div class="mask" id="PanelModalWait_mask" style="z-index: 5; height: 2229px; width: 383px; display: none;">&nbsp;</div><div class="yui-panel-container shadow" id="PanelModalWait_c" style="visibility: hidden; left: 69px; top: 214px; z-index: 6;"><div id="PanelModalWait" class="yui-module yui-overlay yui-panel" style="visibility: inherit; width: 240px; height: 70px;"><div class="bd"><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td style="vertical-align:middle;" valign="middle" align="center"><img src="https://13077.hotelogix.net/styles/assets-hl/css/wait.gif"></td></tr><tr height="1"><td>&nbsp;</td></tr><tr><td height:"11"="" align="center"><div id="loadingPanelText">Loading Content...</div></td></tr></tbody></table></div></div><div class="underlay"></div></div><div class="yui-panel-container shadow" id="wait_c" style="left: 69px; top: 215px; z-index: 4;"><div id="wait" class="yui-module yui-overlay yui-panel" style="visibility: inherit; width: 240px;"><div class="hd" style="cursor: auto;">Please wait...</div><div class="bd"><img src="https://13077.hotelogix.net/images/wait.gif"></div></div></div>
+    <div id="detectInternetConnOFF" class="notIntConn" style="display:none;">You Are Offline...</div>
+              
+	
+    <link rel="stylesheet" type="text/css" href="https://13077.hotelogix.net/jq/css/smoothness/jquery-ui-1.11.1.min.css">
+    <link rel="stylesheet" type="text/css" href="https://13077.hotelogix.net/jq/css/plugins/timepicker/timepicker.css">
+
+    <script type="text/javascript" src="https://13077.hotelogix.net/jq/js/jquery-ui-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://13077.hotelogix.net/jq/js/plugins/timepicker/jquery-ui-timepicker-addon.js"></script>
+    
+    <script type="text/javascript" src="https://13077.hotelogix.net/js/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="https://13077.hotelogix.net/jq/js/jquery.dialogextend.js"></script>
+   
+        <!-- Bootstrap core JS -->
+    <script language="javascript">
+    
+            var JQEditorsDom =[];
+            
+            
+            var configSett = [
+            ['Source', '-', 'NewPage','-','Undo','Redo','Preview'],
+            ['Find','Replace','-','SelectAll','RemoveFormat'],
+            ['Link', 'Unlink', 'Image','FontSize'],
+            '/',
+            ['Bold', 'Italic','Underline'],
+            ['NumberedList','BulletedList','-','JustifyLeft','JustifyCenter','JustifyRight','Blockquote'],
+            ['TextColor','BGColor', '-','SpecialChar', '-', 'Maximize']
+            ];
+            
+            function setJQEditor(JQEditorHelperIds,type)
+            {
+                
+                if(JQEditorHelperIds.length>0)
+                {
+                    if(type=='DEFAULT')
+                    {
+                        for(var i=0; i< JQEditorHelperIds.length; i++)
+                        {
+                            var editorId ='#'+JQEditorHelperIds[i];
+
+                            if( $(editorId).length>0)
+                            {
+                                CKEDITOR.replace( JQEditorHelperIds[i] );
+                            }
+                        }
+                    }
+                    else if(type=='SHORT')
+                    {
+                        for(var i=0; i< JQEditorHelperIds.length; i++)
+                        {
+                            var editorId ='#'+JQEditorHelperIds[i];
+
+                            if( $(editorId).length>0)
+                            {
+                                CKEDITOR.replace( JQEditorHelperIds[i],
+                                 {toolbar :configSett}
+                                );
+                            }
+                        }
+                    }
+                    else if(type=='SIMPLE')
+                    {
+                        
+                        for(var i=0; i< JQEditorHelperIds.length; i++)
+                        {
+                            var editorId ='#'+JQEditorHelperIds[i];
+
+                            if( $(editorId).length>0)
+                            {
+                               CKEDITOR.replace( JQEditorHelperIds[i],
+                                {
+                                    //extraPlugins : 'bbcode',
+                                    toolbar :configSett
+                                });
+                                CKEDITOR.config.enterMode = CKEDITOR.ENTER_BR;   
+                                CKEDITOR.config.protectedSource.push( /\[\[[\s\S]*?\]\]/g );   // [[tag]] code
+                               // CKEDITOR.config.protectedSource.push( /\{\{[\s\S]*?\}\}/g );   // {{tag}} code        
+
+
+                                CKEDITOR.on( 'instanceReady', function( ev )
+                                { 
+                                    var writer = ev.editor.dataProcessor.writer;             
+                                    writer.indentationChars = ' ';
+                                    var dtd = CKEDITOR.dtd;            
+                                    for ( var e in CKEDITOR.tools.extend( {}, dtd.$block, dtd.$listItem, dtd.$tableContent ) )
+                                    {
+                                        ev.editor.dataProcessor.writer.setRules( e,
+                                        {
+                                        indent : true,
+                                        breakBeforeOpen : true,
+                                        breakAfterOpen : true,
+                                        breakBeforeClose : true,
+                                        breakAfterClose : true
+                                        });
+                                    }
+
+                                });
+                                
+                                
+                            }
+                        }
+                    }
+                }    
+            }
+                
+
+</script>
+	    <table width="100%" cellspacing="2" cellpadding="1">
+                        <tbody><tr>
+                        <td> 
+                            <div id="dvAnnounceMent">
+                                                            </div>
+                        </td> 
+                        </tr> 
+                </tbody></table>
+                
+    
+<div class="padingtd">
+    <div id="popup_head">Manage Source(s)</div>
+    <form action="https://13077.hotelogix.net/admine/bookingsrcgroup/popupsave" method="post" name="frmListView" id="frmListView" onsubmit="return chkForm(this)">
+        <input type="hidden" name="refType" value="agent">
+        <input type="hidden" name="groupId" value="1964">
+
+        <table class="poptable" width="100%" cellspacing="0" cellpadding="0" border="0">
+
+            <tbody><tr>
+                <td class="error" style="padding:0px;" colspan="2" align="left"> 
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Source Type</td>
+                <td>
+                    <select name="refType" id="refType" onchange="javascript:reloadForm(this)"> 
+                        <option style="color:#000000" isfeaturemapped="" class="drp_val" value="fdesk">Frontdesk</option><option style="color:#000000" isfeaturemapped="" class="drp_val" value="web">Web</option><option style="color:#000000" isfeaturemapped="" class="drp_val" value="corp">Corporate</option><option style="color:#000000" isfeaturemapped="" class="drp_val" value="agent" selected="">Travel Agent</option><option style="color:#000000" isfeaturemapped="" class="drp_val" value="oth">Other (GDS)</option>                    </select>
+                </td>
+            </tr>
+        </tbody></table>
+        <table class="poptable" width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+                <th width="3%" align="center"><strong>#</strong></th>
+                <th width="5%" align="center">
+                    <input type="checkbox" name="checkbox5" value="checkbox" onclick="toggleSelectChk(this.checked);">
+                </th>
+                <th width="22%"><strong> Source Type</strong>  </th>
+                <th width="20%"><strong>Title            </strong></th></tr>
+                                <tr>
+                        <td width="3%" valign="top" align="center">1</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('1',this.checked)" id="chkId_1" name="members[]" value="16094_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        KlwNh (A1000)        <input type="checkbox" style="visibility:hidden" id="sourceName_1" name="namesOfSources[]" value="Travel Agent  KlwNh (A1000) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">2</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('2',this.checked)" id="chkId_2" name="members[]" value="16093_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        jhCMR (A999)        <input type="checkbox" style="visibility:hidden" id="sourceName_2" name="namesOfSources[]" value="Travel Agent  jhCMR (A999) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">3</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('3',this.checked)" id="chkId_3" name="members[]" value="16029_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        dozfs (A998)        <input type="checkbox" style="visibility:hidden" id="sourceName_3" name="namesOfSources[]" value="Travel Agent  dozfs (A998) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">4</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('4',this.checked)" id="chkId_4" name="members[]" value="16028_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        BadQH (A997)        <input type="checkbox" style="visibility:hidden" id="sourceName_4" name="namesOfSources[]" value="Travel Agent  BadQH (A997) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">5</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('5',this.checked)" id="chkId_5" name="members[]" value="16027_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        aaaOq (A996)        <input type="checkbox" style="visibility:hidden" id="sourceName_5" name="namesOfSources[]" value="Travel Agent  aaaOq (A996) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">6</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('6',this.checked)" id="chkId_6" name="members[]" value="16026_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        YIQIK (A995)        <input type="checkbox" style="visibility:hidden" id="sourceName_6" name="namesOfSources[]" value="Travel Agent  YIQIK (A995) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">7</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('7',this.checked)" id="chkId_7" name="members[]" value="16025_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        uhysC (A994)        <input type="checkbox" style="visibility:hidden" id="sourceName_7" name="namesOfSources[]" value="Travel Agent  uhysC (A994) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">8</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('8',this.checked)" id="chkId_8" name="members[]" value="16024_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        QcEWP (A993)        <input type="checkbox" style="visibility:hidden" id="sourceName_8" name="namesOfSources[]" value="Travel Agent  QcEWP (A993) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">9</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('9',this.checked)" id="chkId_9" name="members[]" value="16023_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        Ibuvq (A992)        <input type="checkbox" style="visibility:hidden" id="sourceName_9" name="namesOfSources[]" value="Travel Agent  Ibuvq (A992) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">10</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('10',this.checked)" id="chkId_10" name="members[]" value="16022_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        UwJlq (A991)        <input type="checkbox" style="visibility:hidden" id="sourceName_10" name="namesOfSources[]" value="Travel Agent  UwJlq (A991) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">11</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('11',this.checked)" id="chkId_11" name="members[]" value="15901_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        zjAWi (A990)        <input type="checkbox" style="visibility:hidden" id="sourceName_11" name="namesOfSources[]" value="Travel Agent  zjAWi (A990) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">12</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('12',this.checked)" id="chkId_12" name="members[]" value="15900_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        WTLMG (A989)        <input type="checkbox" style="visibility:hidden" id="sourceName_12" name="namesOfSources[]" value="Travel Agent  WTLMG (A989) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">13</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('13',this.checked)" id="chkId_13" name="members[]" value="15899_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        xoyaV (A988)        <input type="checkbox" style="visibility:hidden" id="sourceName_13" name="namesOfSources[]" value="Travel Agent  xoyaV (A988) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">14</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('14',this.checked)" id="chkId_14" name="members[]" value="15898_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        KKNpp (A987)        <input type="checkbox" style="visibility:hidden" id="sourceName_14" name="namesOfSources[]" value="Travel Agent  KKNpp (A987) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">15</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('15',this.checked)" id="chkId_15" name="members[]" value="15892_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        caaVc (A986)        <input type="checkbox" style="visibility:hidden" id="sourceName_15" name="namesOfSources[]" value="Travel Agent  caaVc (A986) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">16</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('16',this.checked)" id="chkId_16" name="members[]" value="15891_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        lliVs (A985)        <input type="checkbox" style="visibility:hidden" id="sourceName_16" name="namesOfSources[]" value="Travel Agent  lliVs (A985) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">17</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('17',this.checked)" id="chkId_17" name="members[]" value="15890_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        GeNOm (A984)        <input type="checkbox" style="visibility:hidden" id="sourceName_17" name="namesOfSources[]" value="Travel Agent  GeNOm (A984) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">18</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('18',this.checked)" id="chkId_18" name="members[]" value="15889_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        twBhe (A983)        <input type="checkbox" style="visibility:hidden" id="sourceName_18" name="namesOfSources[]" value="Travel Agent  twBhe (A983) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">19</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('19',this.checked)" id="chkId_19" name="members[]" value="15888_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        nEuoT (A982)        <input type="checkbox" style="visibility:hidden" id="sourceName_19" name="namesOfSources[]" value="Travel Agent  nEuoT (A982) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">20</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('20',this.checked)" id="chkId_20" name="members[]" value="15887_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        UQpWY (A981)        <input type="checkbox" style="visibility:hidden" id="sourceName_20" name="namesOfSources[]" value="Travel Agent  UQpWY (A981) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">21</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('21',this.checked)" id="chkId_21" name="members[]" value="15845_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        qWrTL (A980)        <input type="checkbox" style="visibility:hidden" id="sourceName_21" name="namesOfSources[]" value="Travel Agent  qWrTL (A980) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">22</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('22',this.checked)" id="chkId_22" name="members[]" value="15844_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        jtjMb (A979)        <input type="checkbox" style="visibility:hidden" id="sourceName_22" name="namesOfSources[]" value="Travel Agent  jtjMb (A979) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">23</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('23',this.checked)" id="chkId_23" name="members[]" value="15843_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        aHObF (A978)        <input type="checkbox" style="visibility:hidden" id="sourceName_23" name="namesOfSources[]" value="Travel Agent  aHObF (A978) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">24</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('24',this.checked)" id="chkId_24" name="members[]" value="15842_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        xGkxT (A977)        <input type="checkbox" style="visibility:hidden" id="sourceName_24" name="namesOfSources[]" value="Travel Agent  xGkxT (A977) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">25</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('25',this.checked)" id="chkId_25" name="members[]" value="15841_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        wpRaD (A976)        <input type="checkbox" style="visibility:hidden" id="sourceName_25" name="namesOfSources[]" value="Travel Agent  wpRaD (A976) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">26</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('26',this.checked)" id="chkId_26" name="members[]" value="15838_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        FvWal (A975)        <input type="checkbox" style="visibility:hidden" id="sourceName_26" name="namesOfSources[]" value="Travel Agent  FvWal (A975) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">27</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('27',this.checked)" id="chkId_27" name="members[]" value="15837_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        MHrLN (A974)        <input type="checkbox" style="visibility:hidden" id="sourceName_27" name="namesOfSources[]" value="Travel Agent  MHrLN (A974) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">28</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('28',this.checked)" id="chkId_28" name="members[]" value="15836_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        PiSMK (A973)        <input type="checkbox" style="visibility:hidden" id="sourceName_28" name="namesOfSources[]" value="Travel Agent  PiSMK (A973) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">29</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('29',this.checked)" id="chkId_29" name="members[]" value="15804_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        MQSOB (A972)        <input type="checkbox" style="visibility:hidden" id="sourceName_29" name="namesOfSources[]" value="Travel Agent  MQSOB (A972) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">30</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('30',this.checked)" id="chkId_30" name="members[]" value="15803_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        AlfGE (A971)        <input type="checkbox" style="visibility:hidden" id="sourceName_30" name="namesOfSources[]" value="Travel Agent  AlfGE (A971) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">31</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('31',this.checked)" id="chkId_31" name="members[]" value="15802_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        CpBqR (A970)        <input type="checkbox" style="visibility:hidden" id="sourceName_31" name="namesOfSources[]" value="Travel Agent  CpBqR (A970) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">32</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('32',this.checked)" id="chkId_32" name="members[]" value="15801_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        Htlyb (A969)        <input type="checkbox" style="visibility:hidden" id="sourceName_32" name="namesOfSources[]" value="Travel Agent  Htlyb (A969) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">33</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('33',this.checked)" id="chkId_33" name="members[]" value="15799_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        eJbmj (A968)        <input type="checkbox" style="visibility:hidden" id="sourceName_33" name="namesOfSources[]" value="Travel Agent  eJbmj (A968) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">34</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('34',this.checked)" id="chkId_34" name="members[]" value="15798_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        naaLB (A967)        <input type="checkbox" style="visibility:hidden" id="sourceName_34" name="namesOfSources[]" value="Travel Agent  naaLB (A967) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">35</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('35',this.checked)" id="chkId_35" name="members[]" value="15797_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        QoukX (A966)        <input type="checkbox" style="visibility:hidden" id="sourceName_35" name="namesOfSources[]" value="Travel Agent  QoukX (A966) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">36</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('36',this.checked)" id="chkId_36" name="members[]" value="15796_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        BsUBE (A965)        <input type="checkbox" style="visibility:hidden" id="sourceName_36" name="namesOfSources[]" value="Travel Agent  BsUBE (A965) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">37</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('37',this.checked)" id="chkId_37" name="members[]" value="15789_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        lWpeR (A964)        <input type="checkbox" style="visibility:hidden" id="sourceName_37" name="namesOfSources[]" value="Travel Agent  lWpeR (A964) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">38</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('38',this.checked)" id="chkId_38" name="members[]" value="15788_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        QEgfG (A963)        <input type="checkbox" style="visibility:hidden" id="sourceName_38" name="namesOfSources[]" value="Travel Agent  QEgfG (A963) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">39</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('39',this.checked)" id="chkId_39" name="members[]" value="15787_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        hJrxB (A962)        <input type="checkbox" style="visibility:hidden" id="sourceName_39" name="namesOfSources[]" value="Travel Agent  hJrxB (A962) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">40</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('40',this.checked)" id="chkId_40" name="members[]" value="15786_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        aXmGd (A961)        <input type="checkbox" style="visibility:hidden" id="sourceName_40" name="namesOfSources[]" value="Travel Agent  aXmGd (A961) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">41</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('41',this.checked)" id="chkId_41" name="members[]" value="15781_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        oaYWD (A960)        <input type="checkbox" style="visibility:hidden" id="sourceName_41" name="namesOfSources[]" value="Travel Agent  oaYWD (A960) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">42</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('42',this.checked)" id="chkId_42" name="members[]" value="15767_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        vNVzn (A959)        <input type="checkbox" style="visibility:hidden" id="sourceName_42" name="namesOfSources[]" value="Travel Agent  vNVzn (A959) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">43</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('43',this.checked)" id="chkId_43" name="members[]" value="15757_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        OHndY (A958)        <input type="checkbox" style="visibility:hidden" id="sourceName_43" name="namesOfSources[]" value="Travel Agent  OHndY (A958) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">44</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('44',this.checked)" id="chkId_44" name="members[]" value="15739_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        lPNGi (A957)        <input type="checkbox" style="visibility:hidden" id="sourceName_44" name="namesOfSources[]" value="Travel Agent  lPNGi (A957) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">45</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('45',this.checked)" id="chkId_45" name="members[]" value="15738_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        ueltk (A956)        <input type="checkbox" style="visibility:hidden" id="sourceName_45" name="namesOfSources[]" value="Travel Agent  ueltk (A956) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">46</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('46',this.checked)" id="chkId_46" name="members[]" value="15737_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        acWYg (A955)        <input type="checkbox" style="visibility:hidden" id="sourceName_46" name="namesOfSources[]" value="Travel Agent  acWYg (A955) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">47</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('47',this.checked)" id="chkId_47" name="members[]" value="15736_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        NwGtT (A954)        <input type="checkbox" style="visibility:hidden" id="sourceName_47" name="namesOfSources[]" value="Travel Agent  NwGtT (A954) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">48</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('48',this.checked)" id="chkId_48" name="members[]" value="15735_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        WCXJX (A953)        <input type="checkbox" style="visibility:hidden" id="sourceName_48" name="namesOfSources[]" value="Travel Agent  WCXJX (A953) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">49</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('49',this.checked)" id="chkId_49" name="members[]" value="15734_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        VByAC (A952)        <input type="checkbox" style="visibility:hidden" id="sourceName_49" name="namesOfSources[]" value="Travel Agent  VByAC (A952) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">50</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('50',this.checked)" id="chkId_50" name="members[]" value="15724_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        bRLXl (A951)        <input type="checkbox" style="visibility:hidden" id="sourceName_50" name="namesOfSources[]" value="Travel Agent  bRLXl (A951) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">51</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('51',this.checked)" id="chkId_51" name="members[]" value="15723_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        uBYWk (A950)        <input type="checkbox" style="visibility:hidden" id="sourceName_51" name="namesOfSources[]" value="Travel Agent  uBYWk (A950) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">52</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('52',this.checked)" id="chkId_52" name="members[]" value="15722_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        GuMDX (A949)        <input type="checkbox" style="visibility:hidden" id="sourceName_52" name="namesOfSources[]" value="Travel Agent  GuMDX (A949) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">53</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('53',this.checked)" id="chkId_53" name="members[]" value="15721_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        DshOf (A948)        <input type="checkbox" style="visibility:hidden" id="sourceName_53" name="namesOfSources[]" value="Travel Agent  DshOf (A948) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">54</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('54',this.checked)" id="chkId_54" name="members[]" value="15720_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        xvoBK (A947)        <input type="checkbox" style="visibility:hidden" id="sourceName_54" name="namesOfSources[]" value="Travel Agent  xvoBK (A947) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">55</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('55',this.checked)" id="chkId_55" name="members[]" value="15717_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        qoHel (A946)        <input type="checkbox" style="visibility:hidden" id="sourceName_55" name="namesOfSources[]" value="Travel Agent  qoHel (A946) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">56</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('56',this.checked)" id="chkId_56" name="members[]" value="15714_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        iIKAH (A945)        <input type="checkbox" style="visibility:hidden" id="sourceName_56" name="namesOfSources[]" value="Travel Agent  iIKAH (A945) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">57</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('57',this.checked)" id="chkId_57" name="members[]" value="15707_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        IHrPC (A944)        <input type="checkbox" style="visibility:hidden" id="sourceName_57" name="namesOfSources[]" value="Travel Agent  IHrPC (A944) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">58</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('58',this.checked)" id="chkId_58" name="members[]" value="15706_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        jsYKv (A943)        <input type="checkbox" style="visibility:hidden" id="sourceName_58" name="namesOfSources[]" value="Travel Agent  jsYKv (A943) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">59</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('59',this.checked)" id="chkId_59" name="members[]" value="15704_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        HWVeS (A942)        <input type="checkbox" style="visibility:hidden" id="sourceName_59" name="namesOfSources[]" value="Travel Agent  HWVeS (A942) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">60</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('60',this.checked)" id="chkId_60" name="members[]" value="15703_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        HhJpv (A941)        <input type="checkbox" style="visibility:hidden" id="sourceName_60" name="namesOfSources[]" value="Travel Agent  HhJpv (A941) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">61</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('61',this.checked)" id="chkId_61" name="members[]" value="15702_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        lbnWk (A940)        <input type="checkbox" style="visibility:hidden" id="sourceName_61" name="namesOfSources[]" value="Travel Agent  lbnWk (A940) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">62</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('62',this.checked)" id="chkId_62" name="members[]" value="15692_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        sSKtM (A939)        <input type="checkbox" style="visibility:hidden" id="sourceName_62" name="namesOfSources[]" value="Travel Agent  sSKtM (A939) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">63</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('63',this.checked)" id="chkId_63" name="members[]" value="15504_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        KqsDg (A888)        <input type="checkbox" style="visibility:hidden" id="sourceName_63" name="namesOfSources[]" value="Travel Agent  KqsDg (A888) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">64</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('64',this.checked)" id="chkId_64" name="members[]" value="15497_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        wNzsr (A887)        <input type="checkbox" style="visibility:hidden" id="sourceName_64" name="namesOfSources[]" value="Travel Agent  wNzsr (A887) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">65</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('65',this.checked)" id="chkId_65" name="members[]" value="15496_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        MvTNi (A886)        <input type="checkbox" style="visibility:hidden" id="sourceName_65" name="namesOfSources[]" value="Travel Agent  MvTNi (A886) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">66</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('66',this.checked)" id="chkId_66" name="members[]" value="15495_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        ODozz (A885)        <input type="checkbox" style="visibility:hidden" id="sourceName_66" name="namesOfSources[]" value="Travel Agent  ODozz (A885) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">67</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('67',this.checked)" id="chkId_67" name="members[]" value="15494_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        NXOsH (A884)        <input type="checkbox" style="visibility:hidden" id="sourceName_67" name="namesOfSources[]" value="Travel Agent  NXOsH (A884) ">        
+                        </td>
+                        
+                    </tr>
+                            <tr>
+                        <td width="3%" valign="top" align="center">68</td>
+                        <td width="5%" valign="top" align="center">
+                            <input type="checkbox" onchange="toggleSelectSourceName('68',this.checked)" id="chkId_68" name="members[]" value="15142_0" isattachpackage="0">
+                        </td>
+                        <td width="22%">
+                                Travel Agent                        </td>
+                        <td width="20%" valign="top" align="left">
+        jjitx (A723)        <input type="checkbox" style="visibility:hidden" id="sourceName_68" name="namesOfSources[]" value="Travel Agent  jjitx (A723) ">        
+                        </td>
+                        
+                    </tr>
+                    <input type="hidden" value="68" name="totalCan" id="totalCan">
+        </tbody></table>
+        <div class="padtop10" align="center">
+                <input type="submit" class="disablethis button" name="save" value="Save">
+
+                            &nbsp;&nbsp;
+            <input type="button" class="button" name="close" value="Close" onclick="window.close();"></div>
+    </form>
+</div>
+<!--///////// CAN POLICY END-->
+<script>
+    function toggleSelectChk(fl) {
+        var i = '68';
+        for(j=1; j <= i; j++) {
+            document.getElementById("chkId_"+j).checked = fl;
+            document.getElementById("sourceName_"+j).checked = fl;
+        }
+    }
+
+    function reloadForm(obj)
+    {
+        var val = obj.options[obj.selectedIndex].value;
+        window.location.href='https://13077.hotelogix.net/admine/bookingsrcgroup/popup/groupId/1964/refType/'+val;
+    }
+    
+    function chkForm(frm)
+    {
+        var j = 0;
+        var totalCtrl = parseInt(frm.totalCan.value);
+        var isAttachPackage = 0;
+
+        for(i = 1; i <= totalCtrl; ++i) {
+
+            if(document.getElementById("chkId_"+i))
+            {
+                chkBox = document.getElementById("chkId_"+i);
+                isAttachPackage =  parseInt(chkBox.getAttribute("isAttachPackage"));
+                if(chkBox.checked == false && isAttachPackage== 1)
+                {	
+                    j++;
+                }
+            }
+        }
+        if (j >0)
+        {
+            if(confirm("This action will remove some of the sources.\n These sources will stop being part of the Group package."))
+            {
+                disableSubmitButton();
+            }else
+            {
+                
+                selObj =document.getElementById("refType");
+                reloadForm(selObj); //reload to select all old values
+                return false;
+            }
+
+        }
+        disableSubmitButton();
+
+
+    }
+    
+    function toggleSelectSourceName(j,fl)
+    {
+      document.getElementById("sourceName_"+j).checked = fl;  
+    }
+</script>
+		
+	<script type="text/javascript" src="https://13077.hotelogix.net/styles/assets-hl/js/dateformat.js?v=2n520240929"></script>
+	<script type="text/javascript" src="https://13077.hotelogix.net/js/utilities/utilities.js"></script>
+	<script type="text/javascript" src="https://13077.hotelogix.net/js/calendar/calendar-min.js?v=2n520240929"></script>
+	<script type="text/javascript" src="https://13077.hotelogix.net/js/cm/connection-min.js?v=2n520240929"></script>
+	<script type="text/javascript" src="https://13077.hotelogix.net/js/container/container-min.js?v=2n520240929"></script>
+	<script type="text/javascript" src="https://13077.hotelogix.net/js/yui/build/editor/editor-min.js"></script>
+	<script type="text/javascript" src="https://13077.hotelogix.net/js/cm/element-beta-min.js"></script>
+	<script type="text/javascript" src="https://13077.hotelogix.net/js/cm/json-min.js"></script>
+        <script type="text/javascript" src="https://13077.hotelogix.net/js/getstates.js.php?adminUrl=https://13077.hotelogix.net/admine&amp;v=2n520240929"></script>
+	<script type="text/javascript" src="https://13077.hotelogix.net/js/jsapi.js?v=2n520240929"></script>
+    
+    
+
+	<script language="javascript">
+    YAHOO.namespace("example.container");
+
+    function init() {
+
+            if (!YAHOO.example.container.wait) {
+
+            // Initialize the temporary Panel to display while waiting for external content to load
+
+            YAHOO.example.container.wait = 
+                    new YAHOO.widget.Panel("wait",  
+                                                    { width: "240px", 
+                                                      fixedcenter: true, 
+                                                      close: false, 
+                                                      draggable: false, 
+                                                      zindex:4,
+                                                      modal: true,
+                                                      visible: false
+                                                      
+                                                    } 
+                                                );
+    
+            YAHOO.example.container.wait.setHeader("Please wait...");
+            YAHOO.example.container.wait.setBody("<img src=\""+waitLoader.src+"\"/>");
+            YAHOO.example.container.wait.render(document.body);
+
+        }
+	}
+	init();
+ </script>	 <script type="text/javascript">
+ 
+	YAHOO.namespace("example.calendar");
+
+	YAHOO.example.calendar.init = function() {
+
+		var navConfig = {
+					strings : {
+						month: "Choose Month",
+						year: "Enter Year",
+						submit: "OK",
+						cancel: "Cancel",
+						invalidYear: "Please enter a valid year"
+					},
+					monthFormat: YAHOO.widget.Calendar.SHORT,
+					initialFocus: "year"
+				};
+		
+		
+		YAHOO.example.calendar.cal1 = new YAHOO.widget.Calendar("cal1","calFromContainer", { navigator:navConfig, title:"Choose a date:", close:true } );
+
+		var dtToday = new Date(getDateFromFormat('2024-10-28','yyyy-MM-dd'));
+		YAHOO.example.calendar.cal1.today = dtToday;
+		YAHOO.example.calendar.cal1.render()
+		YAHOO.example.calendar.cal1.hide();
+
+                if(YAHOO.util.Dom.get('calToContainer'))
+                {
+                    YAHOO.example.calendar.calTo = new YAHOO.widget.Calendar("calTo","calToContainer", { navigator:navConfig, title:"Choose a date:", close:true } );
+                    YAHOO.example.calendar.calTo.today = dtToday;	
+                    YAHOO.example.calendar.calTo.render()
+                    YAHOO.example.calendar.calTo.hide();
+
+                    YAHOO.example.calendar.cal1.hide();
+                }
+
+		//Displaying Calendar From 
+		YAHOO.util.Event.addListener(
+										"showCalFrom", 
+										"click", 
+										function(){
+
+											showCalendar(YAHOO.example.calendar.cal1, YAHOO.util.Dom.get("displayFrom"));
+										},
+										YAHOO.example.calendar.cal1,
+										true
+									);
+		YAHOO.example.calendar.cal1.selectEvent.subscribe(handleSelect, YAHOO.example.calendar.cal1, true); 
+		//Displaying Calendar From 
+		
+		
+		//Displaying Calendar To
+		YAHOO.util.Event.addListener(
+										"showCalTo", 
+										"click", 
+										function(){
+											showCalendar(YAHOO.example.calendar.calTo, YAHOO.util.Dom.get("displayTill"));
+										},
+										YAHOO.example.calendar.calTo,
+										true
+									);
+		YAHOO.example.calendar.calTo.selectEvent.subscribe(handleSelect2, YAHOO.example.calendar.calTo, true); 
+		//Displaying Calendar To
+		
+			
+		
+	}
+
+	showCalendar = function(calender, txtObj){
+				
+				
+				if(YAHOO.util.Dom.get('showCalFrom').getAttribute('nadate'))
+				{
+					
+					var naDtMysql=YAHOO.util.Dom.get('showCalFrom').getAttribute('nadate');
+					
+					var naDt = formatDate(new Date(getDateFromFormat(naDtMysql,'yyyy-MM-dd')),'MM/dd/yyyy');
+					
+					calender.cfg.setProperty("mindate",naDt);
+					
+					
+				}                
+				calender.clear();	
+				if(txtObj != null && txtObj.value!="" ){
+				
+					var dateSelected = formatDate(new Date(getDateFromFormat(txtObj.value,'yyyy-MM-dd')),'MM/dd/yyyy');
+					var month = formatDate(new Date(getDateFromFormat(txtObj.value,'yyyy-MM-dd')),'MM');
+					var year = formatDate(new Date(getDateFromFormat(txtObj.value,'yyyy-MM-dd')),'yyyy'); 
+					
+					calender.removeRenderers();
+                    calender.cfg.setProperty("mindate","");
+					calender.cfg.setProperty("maxdate","");
+                    
+                    					if(YAHOO.util.Dom.get('showCalFrom').getAttribute('nadate'))
+					{
+						var naDtMysql=YAHOO.util.Dom.get('showCalFrom').getAttribute('nadate');						
+						var naDt = formatDate(new Date(getDateFromFormat(naDtMysql,'yyyy-MM-dd')),'MM/dd/yyyy');						
+						calender.cfg.setProperty("mindate",naDt);
+					}
+                    
+                    if(YAHOO.util.Dom.get('showCalFrom').getAttribute('enablefromdate'))
+                    {
+                        var enbFrmDtMysql=YAHOO.util.Dom.get('showCalFrom').getAttribute('enablefromdate');					
+                        var enbFrmDt = formatDate(new Date(getDateFromFormat(enbFrmDtMysql,'yyyy-MM-dd')),'MM/dd/yyyy');					
+                        calender.cfg.setProperty("mindate",enbFrmDt);					
+                    }
+                    if(YAHOO.util.Dom.get('showCalTo') && YAHOO.util.Dom.get('showCalTo').getAttribute('enablefromdate') && txtObj.getAttribute('changemindate')=='1')
+                    { 
+                        var enbFrmDtMysql=YAHOO.util.Dom.get('showCalTo').getAttribute('enablefromdate');					
+                        var enbFrmDt = formatDate(new Date(getDateFromFormat(enbFrmDtMysql,'yyyy-MM-dd')),'MM/dd/yyyy');					
+                        calender.cfg.setProperty("mindate",enbFrmDt);					
+                    }
+                    if(YAHOO.util.Dom.get('showCalFrom').getAttribute('enabletodate'))
+                    {
+                        var enbToDtMysql=YAHOO.util.Dom.get('showCalFrom').getAttribute('enabletodate');					
+                        var enbToDt = formatDate(new Date(getDateFromFormat(enbToDtMysql,'yyyy-MM-dd')),'MM/dd/yyyy');					
+                        calender.cfg.setProperty("maxdate",enbToDt);					
+                    }
+					
+					var myCustomRenderer = function(workingDate, cell) {
+						
+						 YAHOO.util.Dom.addClass(cell, "highcell"); 
+						 cell.innerHTML = workingDate.getDate();  
+					}
+					
+					calender.addRenderer(dateSelected, myCustomRenderer); 
+					//alert(dateSelected)
+					//alert(year)
+					//alert(month)
+					if(year != "1970"){
+						calender.setYear(year);
+						calender.setMonth(parseInt(month - 1));
+						calender.render();
+					}
+				}	
+				
+				
+				calender.show();
+				
+				
+				//app.textDateSelected = txtObj;
+				
+				//YAHOO.util.Event.on(document, "mousedown", app._onDocumentMouseDown);
+			}
+	
+	YAHOO.util.Event.onDOMReady(YAHOO.example.calendar.init);
+	
+	
+	function convertInLocaleDateFormat(day,month,year) {
+		var dateFormat = "short";
+		dateFormat = dateFormat.replace('mm', month);
+	    dateFormat = dateFormat.replace('MM', month);
+	    dateFormat = dateFormat.replace('m', month);
+	    dateFormat = dateFormat.replace('M', month);
+	    
+	    dateFormat = dateFormat.replace('dd', day);
+	    dateFormat = dateFormat.replace('DD', day);
+	    dateFormat = dateFormat.replace('D', day);
+	    dateFormat = dateFormat.replace('d', day);
+	    
+	    
+	    dateFormat = dateFormat.replace('YY', year);
+	    dateFormat = dateFormat.replace('yy', year);
+	    dateFormat = dateFormat.replace('Y', year);
+	    dateFormat = dateFormat.replace('y', year);
+	    
+	    return dateFormat;
+	}
+	
+	
+	function convertIMySqlLocalDate_Format(day,month,year) {
+		var dateFormat = "short";
+		date1=year+"-"+month+"-"+day;
+	    return date1;
+	}
+	
+	function changeDateFormat(day,month,year,dateFormat) {
+		var sDay = ""+day;
+		if(sDay.length == 1) {
+			day = "0" + day;
+		}
+		
+		dateFormat = dateFormat.replace('mm', month);
+	    dateFormat = dateFormat.replace('MM', month);
+	    dateFormat = dateFormat.replace('M', month);
+	    dateFormat = dateFormat.replace('m', month);
+	    
+	    dateFormat = dateFormat.replace('dd', day);
+	    dateFormat = dateFormat.replace('DD', day);
+	    dateFormat = dateFormat.replace('D', day);
+	    dateFormat = dateFormat.replace('d', day);
+	    
+	    
+	    dateFormat = dateFormat.replace('YY', year);
+	    dateFormat = dateFormat.replace('yy', year);
+	    dateFormat = dateFormat.replace('Y', year);
+	    dateFormat = dateFormat.replace('y', year);
+	    
+	    return dateFormat;
+	}
+	
+	var monthsName = [];
+	monthsName[1] = "January";
+	monthsName[2] = "February";
+	monthsName[3] = "March";
+	monthsName[4] = "April";
+	monthsName[5] = "May";
+	monthsName[6] = "June";
+	monthsName[7] = "July";
+	monthsName[8] = "August";
+	monthsName[9] = "September";
+	monthsName[10] = "October";
+	monthsName[11] = "November";
+	monthsName[12] = "December";
+	
+	var monthsNameShort = [];
+	monthsNameShort[1] = "Jan";
+	monthsNameShort[2] = "Feb";
+	monthsNameShort[3] = "Mar";
+	monthsNameShort[4] = "Apr";
+	monthsNameShort[5] = "May";
+	monthsNameShort[6] = "Jun";
+	monthsNameShort[7] = "Jul";
+	monthsNameShort[8] = "Aug";
+	monthsNameShort[9] = "Sep";
+	monthsNameShort[10] = "Oct";
+	monthsNameShort[11] = "Nov";
+	monthsNameShort[12] = "Dec";
+	
+	
+</script>       
+ <script type="text/javascript"> 
+          var oPanelLoadingDivAdmin = new YAHOO.widget.Panel("PanelModalWait",
+                                                    { width:"240px",
+                                                       height:"70px",
+                                                        fixedcenter:true,
+                                                        close:false,
+                                                        draggable:false,
+                                                        zindex:9999,
+                                                        modal:true,
+                                                        visible:true
+                                                    }
+                            );
+                                
+      oPanelLoadingDivAdmin.setBody('<table width="100%" cellpadding="0"  cellspacing="0" border="0" ><tr><td align="center" valign="middle" style="vertical-align:middle;"><img src="https://13077.hotelogix.net/styles/assets-hl/css/wait.gif" /></td></tr><tr height="1"><td>&nbsp;</td></tr><tr><td align="center" height:"11"><div id="loadingPanelText">Loading Content...</div></td></tr></table>');
+      oPanelLoadingDivAdmin.render(document.body);
+      oPanelLoadingDivAdmin.hide();
+
+              
+        function clickToGTranslateV2(srcGBox,destGBox,translateFromLang,translateToLang,yuiEditor)
+        {  
+                var srctxt=$('#'+srcGBox).val();
+                if(srctxt.length>1000)
+                {
+                    alert("Limit for Autotext translate is 1000 characters only.\n Please do a manual translation or reduce the text size.");
+                }
+                else
+                {
+                  
+                  var postData = {fromCode: translateFromLang,toCode: translateToLang,srctxt: srctxt};
+                  
+                  var actionPost = 'https://13077.hotelogix.net/admine/ajax/dotranslate/';
+                  
+                    $.ajax({
+                        url: actionPost,
+                        type: "POST",
+                        dataType: "json",
+                        data: postData,
+                        crossDomain: false,            
+                        error: function (jqXHR, exception) {
+
+                        },
+                        success: function( response ) {
+                            
+                                   if (response.data)
+                                   {
+                                       $('#'+destGBox).val(response.data.translations);
+                                   }
+                                   else if(response.error)
+                                   {
+                                        $('#'+destGBox).val('');
+                                        alert(response.error.message);
+                                   }    
+                         
+                        }
+                    });
+                  
+                }
+            
+
+        }
+
+	function html_entity_decode_gtranslate( string ) { 
+		var ret, tarea = document.createElement('textarea');
+		tarea.innerHTML = string;
+		ret = tarea.value;
+		return ret;
+	}
+function jqueryDialog(dialogElemObj, dialogExtendParams, isModal)
+    {
+        if(typeof dialogExtendParams == 'undefined')
+        {
+            var dialogExtendOptions = {
+                "closable" : true,
+                "maximizable" : true,
+                "minimizable" : true,
+                "minimizeLocation" : 'right',
+                "collapsable" : true,
+                "dblclick" : 'maximize'
+              };
+          }
+          else
+          {
+             var dialogExtendOptions = dialogExtendParams;
+          }
+
+        $(dialogElemObj).dialog({modal: ((typeof isModal != 'undefined')?isModal:true),
+                closeOnEscape: false,
+                minHeight:400,
+                minWidth:850,
+                resizable:false,
+                autoOpen: false
+        }).dialogExtend(dialogExtendOptions);
+    }
+    
+    var bookingSrcdialogExtendParams = {
+        "closable" : true,
+        "maximizable" : true,
+        "minimizable" : true,
+        "minimizeLocation" : 'right',
+        "collapsable" : true,
+        "dblclick" : 'maximize'
+      };
+      
+      jqueryDialog($("#bookingSuiteRateIframe"), bookingSrcdialogExtendParams, false);
+      
+      $("#bookingSuiteIframeOpen, #bookingSuiteIframeOpen1").on("click", function (){
+        var actionUrl = 'https://13077.hotelogix.net/admine/index/bookingsuiteiframe';
+        $("#loadImg").show();
+        $.get(actionUrl, function(response, status, xhr ) {
+              var jsonParsedData = $.parseJSON(response);
+
+              if (status == "error" || jsonParsedData.error == 1)
+              {
+                  var errorMessage = (status == "error")?xhr.statusText:((jsonParsedData.error == 1)?jsonParsedData.message:'');
+                  $("#errorMessage").html(errorMessage);
+                  $("#errorMessage").show();
+                  $("#bookingSuiteRateIframe").dialog('open');
+              }
+              else
+              {
+                  $("#errorMessage").html("");
+                  $("#errorMessage").hide();
+                  var bsHeight = (window.innerHeight)-100;
+                  console.log(bsHeight);
+                  var iframeUrl = jsonParsedData.iframeUrl;
+                  $("#bookingSuitePreview").attr('src', iframeUrl);
+                  $("#bookingSuiteRateIframe").css({top:'0px'});
+                  $("#bookingSuiteRateIframe").dialog('option','minWidth',950);
+                  $("#bookingSuiteRateIframe").dialog('option','minHeight',bsHeight);
+                  $("#bookingSuiteRateIframe").dialog('option','resizable',true);
+                  $(".ui-dialog").css({top:'0px',position:'fixed'});
+                  $("#bookingSuitePreview").attr('height',(bsHeight)-70);
+                  $("#bookingSuitePreview").show();
+                  $("#bookingSuiteRateIframe").dialog('open');
+              }
+        });
+    });
+    
+    $('#bookingSuiteRateIframe').on('dialogclose', function(event) {
+        $("#bookingSuitePreview").attr('src', "");
+        $("#bookingSuitePreview").hide();
+        $("#errorMessage").html("");
+        $("#errorMessage").hide();
+    });
+    $("#bookingSuiteRateIframe").on("dialogresize", function( event, ui ) {
+            var bsHeight = (window.innerHeight);
+            console.log(bsHeight);
+            $("#bookingSuiteRateIframe").dialog('option','minHeight',bsHeight);
+            $("#bookingSuitePreview").attr('height',(bsHeight)-70);
+    });
+    $(document).ready(function() {
+        $('iframe').load(function() {
+            $("#loadImg").hide();
+        });
+    });
+    /*$('.ui-dialog-titlebar').on('dblclick', function (event) {
+        event.preventDefault();
+        var state =  $("#bookingSuiteRateIframe").dialogExtend("state");
+        if(state == "maximized")
+        {
+            var bsHeight = (window.innerHeight)-100;
+            $("#bookingSuiteRateIframe").dialog('option','minHeight',bsHeight);
+            $("#bookingSuitePreview").attr('height',(bsHeight)-60);
+        }
+        else
+        {
+            var bsHeight = (window.innerHeight);
+            $("#bookingSuiteRateIframe").dialog('option','minHeight',bsHeight);
+            $("#bookingSuitePreview").attr('height',(bsHeight)-60);
+        }
+    });*/
+   
+    $('.ui-dialog-titlebar-maximize').on('click', function (event) {
+        event.preventDefault();
+        var bsHeight = (window.innerHeight);
+        $("#bookingSuiteRateIframe").dialog('option','minHeight',bsHeight);
+        $("#bookingSuitePreview").attr('height',(bsHeight)-70);
+    });
+
+    $('.ui-dialog-titlebar-restore').on('click', function (event) {
+        event.preventDefault();
+        var bsHeight = (window.innerHeight)-100;
+        $("#bookingSuiteRateIframe").dialog('option','minHeight',bsHeight);
+        $("#bookingSuitePreview").attr('height',(bsHeight)-70);
+    });
+	
+    google.setOnLoadCallback(initGoogleTranslate);
+	function initGoogleTranslate(){}
+        
+        var txtAreaCount = 0;
+</script><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable" style="display: none;" tabindex="-1" role="dialog" aria-describedby="bookingSuiteRateIframe" aria-labelledby="ui-id-1"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">Booking Suite Dashboard</span><div class="ui-dialog-titlebar-buttonpane" style="position: absolute; top: 50%; right: 0.3em; margin-top: -10px; height: 18px;"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close" style="position: relative; float: right; top: auto; right: auto; margin: 0px;"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button><a class="ui-dialog-titlebar-restore ui-corner-all ui-state-default" href="#" role="button" style="display: none;"><span class="ui-icon ui-icon-newwin" title="restore">restore</span></a><a class="ui-dialog-titlebar-collapse ui-corner-all ui-state-default" href="#" title="collapse" role="button"><span class="ui-icon ui-icon-triangle-1-s">collapse</span></a><a class="ui-dialog-titlebar-maximize ui-corner-all ui-state-default" href="#" title="maximize" role="button"><span class="ui-icon ui-icon-extlink">maximize</span></a><a class="ui-dialog-titlebar-minimize ui-corner-all ui-state-default" href="#" title="minimize" role="button"><span class="ui-icon ui-icon-minus">minimize</span></a></div></div><div id="bookingSuiteRateIframe" style="" class="ui-dialog-content ui-widget-content ui-dialog-normal">
+        <div id="errorMessage"></div>
+        <div id="loadImg" style="display: none;"><div><img src="https://13077.hotelogix.net/styles/assets-hl/css/wait.gif"><br>Booking Suite Rate Intelligence Loading.....</div></div>
+        <iframe id="bookingSuitePreview" allowfullscreen="" src="" style="display:none;" width="100%" height="456" frameborder="0"></iframe>
+    </div></div><style class="dialog-extend-css" type="text/css">.ui-dialog .ui-dialog-titlebar-buttonpane>a { float: right; }.ui-dialog .ui-dialog-titlebar-restore { width: 19px; height: 18px; }.ui-dialog .ui-dialog-titlebar-restore span { display: block; margin: 1px; }.ui-dialog .ui-dialog-titlebar-restore:hover,.ui-dialog .ui-dialog-titlebar-restore:focus { padding: 0; }.ui-dialog .ui-dialog-titlebar ::selection { background-color: transparent; }</style><style class="dialog-extend-collapse-css" type="text/css">.ui-dialog .ui-dialog-titlebar-collapse { width: 19px; height: 18px; }.ui-dialog .ui-dialog-titlebar-collapse span { display: block; margin: 1px; }.ui-dialog .ui-dialog-titlebar-collapse:hover,.ui-dialog .ui-dialog-titlebar-collapse:focus { padding: 0; }</style><style class="dialog-extend-maximize-css" type="text/css">.ui-dialog .ui-dialog-titlebar-maximize { width: 19px; height: 18px; }.ui-dialog .ui-dialog-titlebar-maximize span { display: block; margin: 1px; }.ui-dialog .ui-dialog-titlebar-maximize:hover,.ui-dialog .ui-dialog-titlebar-maximize:focus { padding: 0; }</style><style class="dialog-extend-minimize-css" type="text/css">.ui-dialog .ui-dialog-titlebar-minimize { width: 19px; height: 18px; }.ui-dialog .ui-dialog-titlebar-minimize span { display: block; margin: 1px; }.ui-dialog .ui-dialog-titlebar-minimize:hover,.ui-dialog .ui-dialog-titlebar-minimize:focus { padding: 0; }</style>
+
+
+<script type="text/javascript">
+                        for(k in CKEDITOR.instances)
+                        {
+                            var instance = CKEDITOR.instances[k];
+                            instance.destroy(true);
+                        }
+
+                        var JQEditorHelperIds = [];
+                        
+                         if(JQEditorsDom && JQEditorsDom.length > 0)
+                         {
+                            var JQEditorHelperIds=JQEditorsDom;
+                         }
+                         setJQEditor(JQEditorHelperIds,'SIMPLE');
+                   </script><script>
+    /*
+     * force logout users with showing timer
+     */
+    var sec = 59;   // set the seconds
+    var min = 03;   // set the minutes
+
+    function logOutusers(frm,btnDiv,msgContainerId)
+    {
+
+        var prevHtml = $('#'+btnDiv).html();
+        var newHtml = "<img src='https://13077.hotelogix.net/images/icon-save.gif' width='44' height='35' border='0' /><br />"+
+                                 "Logging out user(s)";
+        $('#'+btnDiv).html(newHtml);                                            
+
+        var handleSuccess = function(o)
+        { 
+            if(o.responseText !== undefined)
+            { 
+                try 
+                { 
+                    countDown(frm,btnDiv,msgContainerId,prevHtml);
+                }
+                catch (x) 
+                { 
+                    alert("JSON Parse failed!"); 
+                    return; 
+                }
+            }
+        }
+
+        var handleFailure = function(o)
+        { 
+            if(o.responseText !== undefined)
+            { 
+                return "Operation Failed";
+            } 
+        }
+
+        var callback = { 
+                success:handleSuccess, 
+                failure: handleFailure, 
+                argument: { foo:"foo", bar:"bar" } 
+        }; 	
+
+        sUrl = 'https://13077.hotelogix.net/admine/ajax/startlogedoutuser';
+        var request = YAHOO.util.Connect.asyncRequest('POST', sUrl, callback); 
+    }
+
+    function countDown(frm,btnDiv,msgContainerId,prevHtml) 
+    {
+       sec--;
+        if (sec == -01) 
+        {
+         sec = 59;
+         min = min - 1; 
+        }
+        else 
+        {
+         min = min; 
+        }
+
+        if (sec<=9) { sec = "0" + sec; }
+
+        time = (min<=9 ? "0" + min : min) + " min : " + sec + " sec ";
+
+        document.getElementById(msgContainerId).innerHTML = "<strong>Please wait. User(s) will be logged out within "+time+"</strong>";
+
+        SD=window.setTimeout(function() { countDown(frm,btnDiv,msgContainerId,prevHtml);}, 1000);
+
+        if (min == '00' && sec == '00') 
+        { 
+            sec = "00"; 
+            window.clearTimeout(SD); 
+
+            var handleSuccess = function(o)
+            { 
+                if(o.responseText !== undefined)
+                { 
+                   try { 
+                        var messages =o.responseText;
+                        $('#'+btnDiv).html(prevHtml);
+                        frm.isFrontDeskLogedIn.value = 0;
+                        document.getElementById(msgContainerId).innerHTML = " - User(s) logged out successfully. You may now continue to perform action.<br/>";
+
+                    } catch (x) { 
+                        alert("JSON Parse failed!"); 
+                        return; 
+                    } 
+                }
+            }
+            var handleFailure = function(o)
+            { 
+                if(o.responseText !== undefined)
+                { 
+                    return "Operation Failed";
+                } 
+            }
+            var callback = { 
+                    success:handleSuccess, 
+                    failure: handleFailure, 
+                    argument: { foo:"foo", bar:"bar" } 
+            }; 	
+
+            sUrl = 'https://13077.hotelogix.net/admine/ajax/logedoutuser';
+            var request = YAHOO.util.Connect.asyncRequest('POST', sUrl, callback);
+
+        }
+    }
+    
+$(document).ready(function()
+{
+    window.addEventListener('online', function () { 
+        console.log('Internet is connected.');
+        $("#detectInternetConnOFF").hide();
+    });
+    window.addEventListener('offline', function () {
+        console.log('Internet is disconnected.');
+        $("#detectInternetConnOFF").show();
+    });
+});
+    </script>
+        
+
+
+</body></html>

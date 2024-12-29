@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.hotelogix.smoke.AdminTest.Ireporter"/>
+    <listener class-name="com.hotelogix.smoke.AdminTest.AnnotationTransformer"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.hotelogix.smoke.AdminTest.AdminTest">
+        <methods>
+          <include name="fn_verifyCentralizedPkgAttachmentToTA"/>
+          <include name="fn_verifyAdditionOfRoom"/>
+          <include name="fn_PublishAndSaveAsDailyRateActivatedFDPkg"/>
+          <include name="fn_verifyAttachRelationalFrontdeskPkgToTA"/>
+          <include name="fn_verifyUpdatedCentralizedPkgRateOnWeb"/>
+          <include name="fn_verifyPkgAttachmentToFrontdesk"/>
+          <include name="Login"/>
+          <include name="closeApp"/>
+          <include name="fn_Attach2NInclOfTaxPkgToFrontdesk"/>
+          <include name="fn_verifySaveAndDuplicateRoomBtn"/>
+          <include name="fn_verifyAdditionOfPayTypes"/>
+          <include name="fn_verifyCentralizedRateOnWeb"/>
+          <include name="fn_verifyCentralizedPkgAttachmentToWeb"/>
+          <include name="fn_verifyRoomTaxSelectionInRoomType"/>
+          <include name="fn_verifyAdditionOfAddOns"/>
+          <include name="fn_creatingCollection"/>
+          <include name="fn_verifyAdditionOfAmenity"/>
+          <include name="fn_verifyUpdatedCentralizedPkgRatesOnTA"/>
+          <include name="fn_verifyAttachRelationalFrontdeskPkgToWeb"/>
+          <include name="fn_verifyAdditionOfPOSTax"/>
+          <include name="fn_verifyAdditionOfPOSPoint"/>
+          <include name="fn_AdditionOfPOSPointWithCategoryAndProduct"/>
+          <include name="fn_verifySaveHotelInfoChanges"/>
+          <include name="fn_verifyPublishToGridAndSaveFrontdeskPkg"/>
+        </methods>
+      </class> <!-- com.hotelogix.smoke.AdminTest.AdminTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

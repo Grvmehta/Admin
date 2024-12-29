@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Failed_suite_[Suite]">
+              <span class="suite-name border-failed">Failed suite [Suite]</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Failed_suite_[Suite]">
+                    <span>D:\grv final\hmsQaAutomation\Smoak\test-output\testng-failed.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Failed_suite_[Suite]">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Failed_suite_[Suite]">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Failed_suite_[Suite]">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Failed_suite_[Suite]">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Failed_suite_[Suite]">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Failed_suite_[Suite]">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Failed_suite_[Suite]" class="hide-methods failed suite-Failed_suite_[Suite]"> (hide)</a> <!-- hide-methods failed suite-Failed_suite_[Suite] -->
+                      <a href="#" panel-name="suite-Failed_suite_[Suite]" class="show-methods failed suite-Failed_suite_[Suite]"> (show)</a> <!-- show-methods failed suite-Failed_suite_[Suite] -->
+                    </span>
+                    <div class="method-list-content failed suite-Failed_suite_[Suite]">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Suite]" title="com.hotelogix.smoke.AdminTest.AdminTest" hash-for-method="fn_verifyAdditionOfAmenity">fn_verifyAdditionOfAmenity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Failed_suite_[Suite] -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Failed_suite_[Suite]" class="panel Failed_suite_[Suite]">
+          <div class="suite-Failed_suite_[Suite]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.hotelogix.smoke.AdminTest.AdminTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fn_verifyAdditionOfAmenity">
+                  </a> <!-- fn_verifyAdditionOfAmenity -->
+                  <span class="method-name">fn_verifyAdditionOfAmenity</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id=&apos;all&apos;]//li/ul/li/a[text()=&apos;Amenities&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;HMS-DT-N-24&apos;, ip: &apos;192.168.2.160&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 11176, moz:profile: C:\Users\qa\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41f0357e-f15a-4c7b-af73-ac93885ef4ff
+*** Element info: {Using=xpath, value=//div[@id=&apos;all&apos;]//li/ul/li/a[text()=&apos;Amenities&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.js_Click(GenericMethods.java:601)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:588)
+	at com.hotelogix.smoke.genericandbase.BasePage.amenitiesPageNevigation(BasePage.java:270)
+	at com.hotelogix.smoke.AdminTest.AdminTest.fn_verifyAdditionOfAmenity(AdminTest.java:176)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Added amenity gets displayed on 'Amenities List' page and is also displayed on 'Add a Room Type' page under 'Select Amenities' >> 'Available Amenities')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Suite]-class-failed -->
+        </div> <!-- panel Failed_suite_[Suite] -->
+        <div panel-name="test-xml-Failed_suite_[Suite]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\grv final\hmsQaAutomation\Smoak\test-output\testng-failed.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Failed suite [Suite]&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.hotelogix.smoke.AdminTest.Ireporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.hotelogix.smoke.AdminTest.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.hotelogix.smoke.AdminTest.AdminTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;fn_verifyAdditionOfAmenity&quot;/&gt;
+          &lt;include name=&quot;Login&quot;/&gt;
+          &lt;include name=&quot;closeApp&quot;/&gt;
+          &lt;include name=&quot;fn_creatingCollection&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.hotelogix.smoke.AdminTest.AdminTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Failed suite [Suite] --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Failed_suite_[Suite]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Failed suite [Suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Failed_suite_[Suite]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Failed suite [Suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Failed_suite_[Suite]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Failed suite [Suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Failed_suite_[Suite]');
+function tableData_Failed_suite_[Suite]() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'fn_verifyAdditionOfAmenity')
+data.setCell(0, 2, 'com.hotelogix.smoke.AdminTest.AdminTest')
+data.setCell(0, 3, 107700);
+window.suiteTableData['Failed_suite_[Suite]']= { tableData: data, tableDiv: 'times-div-Failed_suite_[Suite]'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Failed_suite_[Suite]">
+              </div> <!-- times-div-Failed_suite_[Suite] -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Failed_suite_[Suite]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Failed suite [Suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Failed_suite_[Suite]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">37 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hotelogix.smoke.AdminTest.AdminTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fn_verifyRateChangeForWebLastMinAndSave</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfRoom</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyUpdatedCentralizedPkgRateOnWeb</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAttachRelationalFrontdeskPkgToTA</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyPkgAttachmentToFrontdesk</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyHeadersAndExportBtnInNightAuditReport</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfGroupTax</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyCentralizedRateOnWeb</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifySaveChangesInDefaultSettings</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyPublishToGridAndSaveWebPkg</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfAddOns</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyPkgAttachmentToCentralizedRate</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyPkgAttachmentToWeb</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAttachRelationalFrontdeskPkgToWeb</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfPOSTax</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfPOSPoint</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyCreditCardChkboxInWebSettings</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifySaveHotelInfoChanges</span>
+                <br/>
+                <span class="ignored-method-name">fn_AdditionOfPOSPointWithCategoryAndProduct</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyCentralizedPkgAttachmentToTA</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfSeason</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfUserLevels</span>
+                <br/>
+                <span class="ignored-method-name">fn_PublishAndSaveAsDailyRateActivatedFDPkg</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfTravelAgent</span>
+                <br/>
+                <span class="ignored-method-name">fn_Attach2NInclOfTaxPkgToFrontdesk</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifySaveAndDuplicateRoomBtn</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfPayTypes</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAddAGrpWithSourcesAndPkgAttachment</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAddAPackageWithInclusion</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyCentralizedPkgAttachmentToWeb</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfCorporate</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfUsersWithReportPermission</span>
+                <br/>
+                <span class="ignored-method-name">fn_Attach3NWeeklyRatesPostingToFrontdesk</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyRoomTaxSelectionInRoomType</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyUpdatedCentralizedPkgRatesOnTA</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyAdditionOfSpecialPeriod</span>
+                <br/>
+                <span class="ignored-method-name">fn_verifyPublishToGridAndSaveFrontdeskPkg</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Failed_suite_[Suite]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hotelogix.smoke.AdminTest.AdminTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Login</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">fn_creatingCollection</span>
+                <span class="method-start">37861 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">fn_verifyAdditionOfAmenity</span>
+                <span class="method-start">37879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">145581 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
